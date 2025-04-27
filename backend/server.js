@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.key);
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 app.post('/api/generate-path', async (req, res) => {
