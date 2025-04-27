@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Learning Journey</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">Personalized Learning Path Generator</header>
+
+        <div class="input">
+            <label for="firstfield">Target Skill</label>
+            <input type="text" id="firstfield" name="skill" placeholder="e.g., Web Development">
+        </div>
+
+        <div class="input">
+            <label for="knowledge">Knowledge Level</label>
+            <select id="knowledge" name="knowledge">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="input">
+            <label for="goal">Learning Goal</label>
+            <input type="text" id="goal" name="goal" placeholder="e.g., Build a portfolio website">
+        </div>
+
+        <div class="input">
+            <label for="path">Available Study Time (per week)</label>
+            <input type="text" id="path" name="path" placeholder="e.g., 5 hours">
+        </div>
+
+        <button id="generateButton" class="generateButton">Craft My Learning Path</button>
+    </div>
+    <script src="frontend.js"></script>
+</body>
+</html>
